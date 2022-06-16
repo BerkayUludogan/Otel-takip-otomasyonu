@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D9BF0F6-A11D-4947-8901-B02AE8638440}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otel_Takip</RootNamespace>
+    <AssemblyName>Otel_Takip</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa_tb.Designer.cs">
+      <DependentUpon>anasayfa_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanSinifi.cs" />
+    <Compile Include="cikis_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cikis_tb.Designer.cs">
+      <DependentUpon>cikis_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kull_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kull_tb.Designer.cs">
+      <DependentUpon>kull_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_ekle.Designer.cs">
+      <DependentUpon>musteri_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_konuk_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_konuk_tb.Designer.cs">
+      <DependentUpon>musteri_konuk_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="m_ekle_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="m_ekle_tb.Designer.cs">
+      <DependentUpon>m_ekle_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odalar_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odalar_tb.Designer.cs">
+      <DependentUpon>odalar_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oda_ayar_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oda_ayar_tb.Designer.cs">
+      <DependentUpon>oda_ayar_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oda_ozell_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oda_ozell_tb.Designer.cs">
+      <DependentUpon>oda_ozell_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rapor_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rapor_tb.Designer.cs">
+      <DependentUpon>rapor_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rez_bil_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rez_bil_tb.Designer.cs">
+      <DependentUpon>rez_bil_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rez_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rez_tb.Designer.cs">
+      <DependentUpon>rez_tb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifre_hatirlat_tb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifre_hatirlat_tb.Designer.cs">
+      <DependentUpon>sifre_hatirlat_tb.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anasayfa_tb.resx">
+      <DependentUpon>anasayfa_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cikis_tb.resx">
+      <DependentUpon>cikis_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kull_tb.resx">
+      <DependentUpon>kull_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_ekle.resx">
+      <DependentUpon>musteri_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_konuk_tb.resx">
+      <DependentUpon>musteri_konuk_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="m_ekle_tb.resx">
+      <DependentUpon>m_ekle_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odalar_tb.resx">
+      <DependentUpon>odalar_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oda_ayar_tb.resx">
+      <DependentUpon>oda_ayar_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oda_ozell_tb.resx">
+      <DependentUpon>oda_ozell_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapor_tb.resx">
+      <DependentUpon>rapor_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rez_bil_tb.resx">
+      <DependentUpon>rez_bil_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rez_tb.resx">
+      <DependentUpon>rez_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifre_hatirlat_tb.resx">
+      <DependentUpon>sifre_hatirlat_tb.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\value.png" />
+    <None Include="bin\Debug\resimler\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\resimler\bed %282%29.png" />
+    <Content Include="bin\Debug\resimler\presentation.png" />
+    <Content Include="bin\Debug\resimler\tools.png" />
+    <None Include="Resources\WhatsApp Image 2019-05-13 at 20.35.09.jpg" />
+    <None Include="Resources\WhatsApp Image 2019-05-13 at 20.35.08.jpg" />
+    <None Include="Resources\ay.jpg" />
+    <None Include="Resources\WhatsApp Image 2019-05-13 at 20.35.03.jpg" />
+    <None Include="Resources\IMG_21382.jpg" />
+    <None Include="Resources\IMG_21381.jpg" />
+    <None Include="Resources\IMG_2138.jpg" />
+    <None Include="Resources\IMG-20180729-WA00101.jpg" />
+    <None Include="Resources\IMG-20180729-WA0010.jpg" />
+    <None Include="Resources\IMG-20180729-WA0009.jpg" />
+    <None Include="Resources\reception.png" />
+    <None Include="Resources\reserved.png" />
+    <None Include="Resources\access.png" />
+    <None Include="Resources\cleaning.png" />
+    <None Include="Resources\commerce-and-shopping %281%291.png" />
+    <None Include="Resources\commerce-and-shopping %281%29.png" />
+    <None Include="Resources\presentation.png" />
+    <None Include="Resources\man-user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
